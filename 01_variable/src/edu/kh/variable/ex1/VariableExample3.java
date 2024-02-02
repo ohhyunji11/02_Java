@@ -12,7 +12,7 @@ public class VariableExample3 {
 		 * --> 이런 상황을 해결하기 위해서 필요한 기술이 형변환.
 		 * 
 		 * 자동 / 강제 형변환이 존재.
-		 *
+		 * 
 		 * */
 		
 		int num1 = 10;
@@ -34,11 +34,12 @@ public class VariableExample3 {
 		int i2 = 2_100_000_000; // 21억
 		
 		long l2 = 10_000_000_000L; // 100억
-			
+		
 		long result2 = i2 + l2;
 		// int + long -> long + long = long
 		
 		System.out.println("result2 : " + result2);
+		
 		
 		// char -> int 형변환
 		// char 자료형은 문자형이지만 실제 저장하는 값은
