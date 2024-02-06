@@ -13,110 +13,88 @@ public class ConditionExample { // 기능 제공용 클래스
 		
 		/*
 		 * [작성법]
-		 * if(조건식 {
-		 * 	조건식이 true 일 때 수행할 코드
-		 * 
+		 * if(조건식) {
+		 * 		조건식이 true 일 때 수행할 코드
 		 * }
 		 * 
 		 * 
-		 * 
-		 *
 		 * */
 		
 		// 입력받은 정수가 양수인지 검사
 		// 양수라면 "양수입니다" 출력
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
 		
-
-		 System.out.print("정수 입력 : ");
-		 int input = sc.nextInt();
-		
-	
 		if(input > 0) {
 			System.out.println("양수입니다");
 		}
-	
+		
 		if(input <= 0) {
 			System.out.println("양수가 아니다");
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
-
+	
 	public void ex2() {
 		
 		// if - else 문
 		// 조건식 결과가 true 면 if문,
-		// false
-		
-		
+		// false면 else 구문이 수행됨
 		
 		/*
 		 * [작성법]
-		 *  if(조건식){
-		 *  	조건식이 true일 때 수행될 코드
-		 * } else{
-		 * 조건식이 false일 때 수행될 코드
+		 * 
+		 * if(조건식){
+		 * 		조건식이 true일 때 수행될 코드
+		 * } else {
+		 * 		조건식이 false일 때 수행될 코드
 		 * }
-		 * 
-		 * 
-		 * 
-		 * 
 		 * 
 		 * 
 		 * */
 		
 		
 		// 홀짝 검사
-		// 입력받은 정수값이
-		// 홀수이면 "홀수입니다" 출력
+		// 입력받은 정수값이 
+		// 홀수이면 "홀수입니다"출력
 		// 0이면 "0입니다"
-		// "짝수이면 "짝수입니다" 출력
-		// else if 사용 x, 중첩 if 문 사용하기
+		// 짝수이면 "짝수입니다" 출력
+		// else if 사용 X , 중첩 if 문 사용하기
 		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
 		
+		if(input % 2 != 0) {
+			System.out.println("홀수 입니다");
+		} else { // 짝수 또는 0 입력 시 수행
+			
+			// 중첩 if
+			if(input == 0) {
+				System.out.println("0 입니다");
+			} else {
+				System.out.println("짝수 입니다");
+			}
+			
+		}
 		
-		 System.out.print("정수 입력 : ");
-		 int input = sc.nextInt();
-		 
-		 if(input % 2 !=0) {
-			 System.out.println("홀수 입니다");
-		 } else { // 짝수 또는 0 입력시 수행 
-			 
-			 // 중첩 if
-			 if(input == 0) {
-				 System.out.println("0 입니다");
-			 } else {
-				 System.out.println("짝수 입니다");
-			 }
-			 
-			 
-		 }
-		 
-		 
-		 
 		
 		
 		
 	}
+
 	
 	public void ex3() {
 		// 양수, 음수, 0 판별
-		// if(조건식) - else if(조건식) - else
+		// if(조건식) - else if(조건식) - else 
 		
 		System.out.print("정수 입력 : ");
 		int input = sc.nextInt();
 		
 		if(input > 0) {
 			System.out.println("양수 입니다");
+		
 		} else if(input < 0) { // 바로 위에있는 if문이 만족되지 않은 경우 수행
 			System.out.println("음수 입니다");
 			
@@ -125,35 +103,25 @@ public class ConditionExample { // 기능 제공용 클래스
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
+	
 	public void ex4() {
+		
 		// 달(month)을 입력받아 해당 달에 맞는 계절 출력
 		// 단, 겨울일때 온도가 -15도 이하 "한파 경보", -12이하 "한파 주의보"
 		// 여름일때 온도가 35도 이상 "폭염 경보", 33도 이상 "폭염 주의보"
-		// 1~12 사이가 아닐 땐 "해당하는 계절이 없습니다"출력
+		// 1~12 사이가 아닐 땐 "해당하는 계절이 없습니다" 출력
 		// 1,2,12 겨울
 		// 3~5 봄
 		// 6~8 여름
 		// 9~11 가을
 		
-		int temperature = 34; // 온도는 변수 지정 or 입력받기
 		
-		// 겨울한파주의보
+		// 겨울 한파주의보
 		// 여름 폭염경보
 		// 봄
 		// 가을
-		
 		
 		System.out.print("달 입력 : ");
 		int month = sc.nextInt();
@@ -168,47 +136,42 @@ public class ConditionExample { // 기능 제공용 클래스
 			
 			if(temperature <= -15) {
 				season += " 한파 경보";
-				// "겨울"
-				// season = season + "한파 경보";
+						// "겨울"
+				// season = season + " 한파 경보";
 				// "겨울 한파 경보"
-			} else if(temperature <= -12) {
-				season += "한파 주의보";
+			} else if( temperature <= -12) {
+				season += " 한파 주의보";
 			}
 			
-			
-		} else if(month >=3  && month <= 5) {
+		} else if( month >= 3 && month <= 5 ) {
 			season = "봄";
 			
-		} else if(month >=6 && month <=8) {
+		} else if( month >=6 && month <= 8) {
 			season = "여름";
-			
 			
 			System.out.print("온도 입력 : ");
 			int temperature = sc.nextInt();
 			
 			if(temperature >= 35) {
 				season += " 폭염 경보";
-				// "겨울"
-				// season = season + "한파 경보";
-				// "겨울 한파 경보"
-			} else if(temperature >= 33) {
-				season += "폭염 주의보";
+						
+			} else if( temperature >= 33) {
+				season += " 폭염 주의보";
 			}
 			
-			
-		} else if(month >=9 && month <=11) {
+		} else if( month >= 9 && month <= 11) {
 			season = "가을";
 			
 		} else {
 			season = "해당하는 계절이 없습니다";
-		
 		}
 		
-		System.out.println("season");
+		
+		System.out.println(season);
+		
 		
 	}
 	
-}
 	
 	public void ex5() {
 		// 나이를 입력 받아
@@ -216,30 +179,28 @@ public class ConditionExample { // 기능 제공용 클래스
 		// 13세 초과 19세 이하면 : "청소년 입니다."
 		// 19세 초과 시 : "성인 입니다". 출력
 		
-	System.out.print("나이 입력 :");
-	int age = sc.nextInt();
-	
-	
-	if(age <=13) {
-		System.out.println("어린이 입니다");
-	} else if(age > 19 ) {
-		System.out.println("성인 입니다");
-	} else {
-		System.out.println("청소년 입니다");
-	}
-
+		System.out.print("나이 입력 : ");
+		int age = sc.nextInt();
+		
+		if(age <= 13) {
+			System.out.println("어린이 입니다");
+		} else if(age > 19) {
+			System.out.println("성인 입니다");
+		} else {
+			System.out.println("청소년 입니다");
+		}
+		
 	}
 	
 	
 	public void ex6() {
-	// 점수(100점 만점)를 입력 받아
-	// 90점 이상 : A
-	// 80점 이상 90점 미만 : B
-	// 70점 이상 80점 미만 : C
-	// 60점 이상 70점 미만 : D
-	// 60점 미만 : F
-	// 0점 미만, 100 초과 : "잘못 입력하셨습니다"
-
+		// 점수(100점 만점)를 입력 받아
+		// 90점 이상 : A
+		// 80점 이상 90점 미만 : B
+		// 70점 이상 80점 미만 : C
+		// 60점 이상 70점 미만 : D
+		// 60점 미만 : F
+		// 0점 미만, 100 초과 : "잘못 입력하셨습니다"
 		
 		System.out.print("점수 입력(0~100) : ");
 		int score = sc.nextInt();
@@ -249,20 +210,24 @@ public class ConditionExample { // 기능 제공용 클래스
 		if(score < 0 || score > 100) {
 			result = "잘못 입력했어요~";
 			
-		} else if( score >= 90) {
+		} else if( score >= 90 ) {
 			result = "A";
 			
-		} else if(score >= 80) {
-			result = "b";
-			
-		} else if (score >= 70) {
-			result = "c";
-		} else if (score >= 60) {
+		} else if( score >= 80 ) {
+			result = "B";
+		
+		} else if( score >= 70 ) {
+			result = "C";
+		
+		} else if( score >= 60 ) {
 			result = "D";
-		} else if ( score >)			
+		
+		} else {
+			result = "F";
+		}
 		
 		
-		
+		System.out.println(result);
 		
 	}
 	
@@ -273,41 +238,37 @@ public class ConditionExample { // 기능 제공용 클래스
 		// 나이가 12미만인 경우 : "적정 연령이 아닙니다."
 		// 키가 140.0cm 미만 : "적정 키가 아닙니다."
 		// 나이를 0세 미만, 100세 초과 시 : "잘못 입력 하셨습니다."
-
+		
 		System.out.print("나이 입력 : ");
 		int age = sc.nextInt();
 		
-		String result;
+		String result; 
 		
 		if(age < 0 || age > 100) {
 			result = "잘못 입력하셨습니다";
+			
 		} else {
 			
 			System.out.print("키 입력 : ");
 			double height = sc.nextDouble();
 			
 			if (age < 12) {
-			 result ="적정 연령이 아닙니다";
+				result = "적정 연령이 아닙니다";
 			
-			} else if(height < 140.0) {
+			} else if( height < 140.0 ) {
 				result = "적정 키가 아닙니다";
 				
 			} else {
 				result = "탑승 가능";
-			 
 			}
-		
-	
-	}
-	
-	System.out.println(result);
-	
+			
 		}
-
-	
-	
-	
-
+		
+		
+		System.out.println(result);
+		
+		
+	}
 	
 	
 	public void ex8() {
@@ -321,49 +282,45 @@ public class ConditionExample { // 기능 제공용 클래스
 		// 나이 X , 키 O : "키는 적절하나, 나이는 적절치 않음";
 		// 나이 X , 키 X : "나이와 키 모두 적절치 않음";
 		// 나이 O , 키 O : "탑승 가능"
-	
-	System.out.print("나이 입력 : ");
-	int age = sc.nextInt();
-	
-	String result;
-	
-	if(age < 0 || age > 100 ) {
-		result = "나이를 잘못 입력했어요";
-	
-	} else {
+						
+		System.out.print("나이 입력 : ");
+		int age = sc.nextInt();
 		
-		System.out.print("키 입력 : ");
-		double height = sc.nextDouble();
+		String result;
 		
-		if( height < 0 || height > 250) {
-			result = "키를 잘못 입력했어요";
-			
+		if( age < 0 || age > 100 ) {
+			result = "나이를 잘못 입력했어요";
 			
 		} else {
 			
-			if(age < 12 && height >= 140.0) { // 나이 x, 키 0
-				result = "키는 적절하나, 나이가 적절치 않음";
-				
-			} else if (age >= 12  && height < 140.0 ) {// 나이 0, 키 x
-				result = "나이는 적절하나, 키가 적절치 않음";
-				
-			} else if (age < 12 && height < 140.0) { // 나이 x, 키 x
-				result = "나이와 키 모두 적절치 않음";
+			System.out.print("키 입력 : ");
+			double height = sc.nextDouble();
+			
+			if( height < 0 || height > 250 ) {
+				result = "키를 잘못 입력했어요";
 				
 			} else {
-				result = "탑승 가능";
+				
+				if( age < 12 && height >= 140.0 ) { // 나이 X, 키 O
+					result = "키는 적절하나, 나이가 적절치 않음";
+					
+				} else if( age >= 12 && height < 140.0 ) { // 나이 O, 키 X
+					result = "나이는 적절하나, 키가 적절치 않음";
+					
+				} else if( age < 12 && height < 140.0 ) { // 나이 X, 키 X
+					result = "나이와 키 모두 적절치 않음";
+					
+				} else {
+					result = "탑승 가능";
+				}
+				
 			}
 		}
 		
+		System.out.println(result);
+		
 	}
 	
-	System.out.println(result);
-	
-	
-	
-}
-	
-	
 	
 	
 	
@@ -371,8 +328,6 @@ public class ConditionExample { // 기능 제공용 클래스
 	
 	
 }
-
-	
 	
 	
 	
