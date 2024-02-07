@@ -2,7 +2,7 @@ package edu.kh.variable.ex2;
 
 public class PrintExample {
 	
-	// main 작성 ctrl + spaxe + enter
+	// main 작성 ctrl + space + enter
 	public static void main(String[] args) {
 		
 	// System.out.print() : 단순 출력(출력 후 줄바꿈 x)

@@ -1,28 +1,25 @@
 package edu.kh.array.ex;
 
-public class ArrayRun { // 실행용 클래스
-	
-	public static void main(String[] args) {
+public class ArrayRun {
+
+	public static void main(String[] args) { // 실행용클래스
 		
-		ArrayExample1 arrayEx1 = new ArrayExample1();	
-		//arrayEx1.ex1();
-		//arrayEx1.ex2();
-		//arrayEx1.ex3();
-		//arrayEx1.ex4();
-		//arrayEx1.ex5();
-		//arrayEx1.ex6();
-		//arrayEx1.ex7();
-		//arrayEx1.ex8();
-		//arrayEx1.ex9();
-		
-		ArrayExample2 arrayEx2 = new ArrayExample2();
-		//arrayEx2.shalllowCopy();
-		//arrayEx2.deepCopy();
-		arrayEx2.createLottoNumber();
+		ArrayExample arEx = new ArrayExample();
 	
+		//arEx.ex1();
+		//arEx.ex2();
+		//arEx.ex3();
+		//arEx.ex4();
+		//arEx.ex5();
+		//arEx.ex6();
+		//arEx.ex7();
+		//arEx.ex8();
+		//arEx.ex9();
+		
+		ArrayExample2 arEx2 = new ArrayExample2();
+
+		//arEx2.shallowCopy();
+		//arEx2.deepCopy();
+		//arEx2.createLottoNumber();
 	}
-	
-
 }
-
-
