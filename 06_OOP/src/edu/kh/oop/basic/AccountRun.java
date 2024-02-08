@@ -19,7 +19,7 @@ public class AccountRun {
     System.out.println(a1.getAccountNumber());
     System.out.println(a1.getBalance() );
     System.out.println(a1.getPassword() ); 
-    
+     
     a1.deposit(50000);
     a1.withdraw("1234",2000); // 비밀번호 불일치
     a1.withdraw("7890", 200000000); // 잔액부족

@@ -5,8 +5,10 @@
     <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice"/>
     <fullyQualifiedTypeName name="edu.kh.control.loop.ForExample"/>
     <fullyQualifiedTypeName name="edu.kh.control.loop.WhileExample"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice4"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.People"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
