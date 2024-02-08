@@ -4,7 +4,6 @@ import com.kh.variable.practice2.Practice1;
 import com.kh.variable.practice2.Practice2;
 import com.kh.variable.practice2.Practice3;
 
-
 public class PracticeRun {
 	
 	// 실행클래스
@@ -18,13 +17,9 @@ public class PracticeRun {
 		//pr2.ex1();
 		
 		Practice3 pr3 = new Practice3();
-		// pr3.ex2();
-		// pr3.ex3();
-		// pr3.ex4();
+		//pr3.ex2();
+		//pr3.ex3();
+		pr3.ex4();
 		
-		
-	
-	
 	}
-
 }

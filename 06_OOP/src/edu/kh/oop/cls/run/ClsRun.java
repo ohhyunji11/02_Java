@@ -2,8 +2,8 @@ package edu.kh.oop.cls.run;
 
 import edu.kh.oop.cls.model.service.ClsService;
 
-public class clsRun {
-	
+public class ClsRun {
+
 	public static void main(String[] args) {
 		
 		ClsService service = new ClsService();
@@ -16,16 +16,11 @@ public class clsRun {
 		// 자동으로 기본생성자를 추가해줌(우리 눈엔 안보임)
 		
 		
-	
-		
 		//service.ex1();
 		//service.ex2();
 		//service.ex3();
 		service.ex4();
-		
-		
-
 
 	}
-	
+
 }
