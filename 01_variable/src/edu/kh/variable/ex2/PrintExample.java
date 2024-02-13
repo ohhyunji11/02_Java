@@ -1,4 +1,4 @@
-package edu.kh.variable.ex2;
+ package edu.kh.variable.ex2;
 
 public class PrintExample {
 	
