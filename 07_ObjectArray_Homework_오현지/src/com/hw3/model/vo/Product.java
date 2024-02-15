@@ -4,31 +4,30 @@ import com.hw3.controller.ProductController;
 
 public class Product {
 	
-	private int pid;
+	private int pId;
 	private String pName;
 	private int price;
 	private double tax;
 	
 	public Product() {
-		ProductController.count++;
+		ProductController.count ++;
 	}
 	
-	public Product(int pid, String pName, int price, double tax) {
-		
-		this.pid = pid;
+	public Product(int pId, String pName, int price, double tax) {
+		this.pId = pId;
 		this.pName = pName;
 		this.price = price;
 		this.tax = tax;
-	
-		ProductController.count++;
+		
+		ProductController.count ++;
 	}
 
-	public int getPid() {
-		return pid;
+	public int getpId() {
+		return pId;
 	}
 
-	public void setPid(int pid) {
-		this.pid = pid;
+	public void setpId(int pId) {
+		this.pId = pId;
 	}
 
 	public String getpName() {
@@ -55,5 +54,8 @@ public class Product {
 		this.tax = tax;
 	}
 	
-	
+	public String information() {
+		return "제품번호=" + pId + ", 제품명=" + pName + ", 가격=" + price + ", 세금=" + tax;
+	}
+
 }
