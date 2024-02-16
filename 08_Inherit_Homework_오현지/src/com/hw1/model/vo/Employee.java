@@ -1,8 +1,7 @@
 package com.hw1.model.vo;
 
-public class Employee extends Person {
-	
-	
+public class Employee extends Person{
+
 	private int salary; // 급여
 	private String dept; // 부서
 	
@@ -17,10 +16,9 @@ public class Employee extends Person {
 	
 	@Override
 	public String information() {
-		return super.information()
+		return super.information() 
 				+ String.format(" / 급여 : %d / 부서 : %s", salary, dept);
 	}
 	
 	
-
 }

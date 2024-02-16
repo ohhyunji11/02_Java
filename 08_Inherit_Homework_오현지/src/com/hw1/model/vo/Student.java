@@ -17,9 +17,8 @@ public class Student extends Person{
 	@Override
 	public String information() {
 		return super.information()
-			+String.format("/ 학년 : %d / 전공 : %s", grade, major);
-	
+				+ String.format(" / 학년 : %d / 전공 : %s", grade, major);
 	}
 	
-
+	
 }

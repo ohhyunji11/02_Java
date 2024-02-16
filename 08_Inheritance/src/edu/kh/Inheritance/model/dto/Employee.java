@@ -4,14 +4,14 @@ package edu.kh.Inheritance.model.dto;
 // - 제공되는 클래스 그대로 사용해야 하는 경우
 // String
 
-public /*final*/ class Employee  extends Person{
+public /*final*/ class Employee extends Person{
 	
 	// 필드
 	private String company;
 	
-	// 기본 생성자
+	// 기본생성자
 	public Employee() {}
-	
+
 	// 매개변수생성자
 	public Employee(String name, int age, String nationality, String company) {
 		super(name, age, nationality);
@@ -26,7 +26,8 @@ public /*final*/ class Employee  extends Person{
 		this.company = company;
 	}
 	
-	// Person으로부터 상속받은 메서든 중
+	
+	// Person으로부터 상속받은 메서드 중
 	// move() 메서드를 Employee에 맞게 재정의(==오버라이딩)
 	
 	// @Override 어노테이션 : 해당 메서드가 오버라이딩 되었음을
@@ -39,17 +40,17 @@ public /*final*/ class Employee  extends Person{
 		
 		System.out.println("오버라이딩된 move()");
 		System.out.println("효율적으로 빨리 일하고 움직인다");
-		
 	}
-
+	
+	
 	@Override
 	public String toString() {
-		return super.toString() + "/" + company;
+		return super.toString() + " / " + company;
 	}
+	
 	
 	/*
 	 * final 메서드 -> 오버라이딩 불가
-	 * 
 	 * 
 	 * - 메서드의 기능이 변하면 안되는 경우
 	 * 
@@ -64,17 +65,4 @@ public /*final*/ class Employee  extends Person{
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
 }

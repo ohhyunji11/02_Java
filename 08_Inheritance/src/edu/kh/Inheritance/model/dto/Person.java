@@ -7,6 +7,7 @@ public class Person /*extends Object*/{
 	// - class 선언부에 상속 구문이 하나도 작성되어있지 않다면
 	// 컴파일러가 extends Object 구문을 추가해준다.
 	
+	
 	// 필드
 	private String name; // 이름
 	private int age; // 나이
@@ -23,8 +24,9 @@ public class Person /*extends Object*/{
 		this.nationality = nationality;
 	}
 
-	// 메서드
-		// getter/setter 
+
+	// 메서드 
+	// getter/setter
 	public String getName() {
 		return name;
 	}
@@ -49,9 +51,11 @@ public class Person /*extends Object*/{
 		this.nationality = nationality;
 	}
 	
+	
 	public void breath() {
 		System.out.println("사람은 코나 입으로 숨을 쉰다");
 	}
+	
 	
 	public void move() {
 		System.out.println("사람은 움직일 수 있다.");
@@ -61,18 +65,12 @@ public class Person /*extends Object*/{
 	public String toString() {
 		// Object의 toString() 재정의
 		
-		return  name + "/" + age + "/" + nationality;
-	
-				
-	
+		return name + " / " + age + " / " + nationality;
+	}
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
+
 }

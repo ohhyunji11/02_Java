@@ -8,14 +8,11 @@ public class Person {
 	private double weight; // 몸무게
 	
 	public Person() {}
-
+	
 	public Person(int age, double height, double weight) {
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
-		
-		
-		
 	}
 
 	public String getName() {
@@ -50,12 +47,18 @@ public class Person {
 		this.weight = weight;
 	}
 	
+	
 	public String information() {
 		
 		return String.format("이름 : %s / 나이 : %d / 신장 : %.1f / 몸무게 : %.1f", 
-				name, age, height, weight);
+								name, age, height, weight);
+		
 	}
 	
 	
-
+	
+	
+	
+	
+	
 }

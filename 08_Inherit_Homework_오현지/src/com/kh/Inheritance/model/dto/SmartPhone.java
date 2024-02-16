@@ -1,6 +1,6 @@
 package com.kh.Inheritance.model.dto;
 
-public class SmartPhone  extends Phone{
+public class SmartPhone extends Phone{
 	
 	private String operatingSystem;
 	private int storageCapacity;
@@ -27,44 +27,24 @@ public class SmartPhone  extends Phone{
 
 	public void setStorageCapacity(int storageCapacity) {
 		this.storageCapacity = storageCapacity;
-		
 	}
 	
 	
- @Override
-public void printInfo() {
-	super.printInfo();
-	System.out.println("Operating System : " + operatingSystem);
-	System.out.println("Storage Capacity : " + storageCapacity + "GB");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	@Override
+	public void printInfo() {
+		super.printInfo();
+		System.out.println("Operating System : " + operatingSystem);
+		System.out.println("Storage Capacity : " + storageCapacity + "GB");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
