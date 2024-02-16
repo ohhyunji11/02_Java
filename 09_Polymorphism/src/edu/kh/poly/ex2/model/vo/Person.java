@@ -10,10 +10,12 @@ public class Person extends Animal{
 	
 
 
-	public Person(String name) {
-		super();
+	
+	public Person(String type, String eatType, String name) {
+		super(type, eatType);
 		this.name = name;
 	}
+
 
 
 
@@ -49,7 +51,7 @@ public class Person extends Animal{
 	
 	@Override
 	public String toString() {
-		return "Person : " +  
+		return "Person : " +  super.toString() + " / " + name;
 	}
 
 	
