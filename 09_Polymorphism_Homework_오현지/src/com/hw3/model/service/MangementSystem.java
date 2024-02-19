@@ -1,4 +1,4 @@
-package com.hw2.model.service;
+package com.hw3.model.service;
 
 public interface MangementSystem {
 

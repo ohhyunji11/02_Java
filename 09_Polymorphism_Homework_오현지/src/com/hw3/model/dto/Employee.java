@@ -1,4 +1,4 @@
-package com.hw2.model.dto;
+package com.hw3.model.dto;
 
 public class Employee {
 
