@@ -3,12 +3,11 @@ package edu.kh.todoList.model.dto;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-
-// DTO (Data TransFer Object) : (관련된 값의 묶음)값 전달 역할
+// DTO (Data Transfer Object) : (관련된 값의 묶음)값 전달 역할
 // == VO (Value Object)
 
 // 스트림 입출력을 위한 직렬화
-public class Todo implements Serializable {
+public class Todo implements Serializable{
 	
 	private String title; // 할 일 제목
 	private String detail; // 상세 내용
@@ -19,9 +18,10 @@ public class Todo implements Serializable {
 	// LocalDateTime : 날짜, 시간을 나타내는 클래스
 	// LocalDateTime.now() : 현재 시간 반환
 	
-	
+	// 기본생성자
 	public Todo() {}
 
+	// 매개변수생성자
 	public Todo(String title, String detail, boolean complete, LocalDateTime regDate) {
 		super();
 		this.title = title;
@@ -30,6 +30,8 @@ public class Todo implements Serializable {
 		this.regDate = regDate;
 	}
 
+	
+	// getter/setter
 	public String getTitle() {
 		return title;
 	}
@@ -70,16 +72,4 @@ public class Todo implements Serializable {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}	
+}
