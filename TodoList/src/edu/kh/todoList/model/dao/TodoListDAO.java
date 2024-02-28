@@ -8,7 +8,7 @@ import edu.kh.todoList.model.dto.Todo;
 // 데이터가 저장된 파일/DB/외부 장치에 접근하는 역할
 public interface TodoListDAO {
 	
-	/** TodoList를 파일로 저장하는 메서드
+	/** playList를 파일로 저장하는 메서드
 	 * 
 	 */
 	void saveFile() throws Exception;

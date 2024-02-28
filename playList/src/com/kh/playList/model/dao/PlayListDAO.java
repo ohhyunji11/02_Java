@@ -1,14 +1,14 @@
-package edu.kh.todoList.model.dao;
+package com.kh.playList.model.dao;
 
 import java.util.List;
 
-import edu.kh.todoList.model.dto.Todo;
+import com.kh.playList.model.dto.Play;
 
 // DAO (Data Access Object) : 
 // 데이터가 저장된 파일/DB/외부 장치에 접근하는 역할
-public interface TodoListDAO {
+public interface PlayListDAO {
 	
-	/** TodoList를 파일로 저장하는 메서드
+	/** playList를 파일로 저장하는 메서드
 	 * 
 	 */
 	void saveFile() throws Exception;
@@ -17,7 +17,7 @@ public interface TodoListDAO {
 	/** 할 일 목록 반환 DAO
 	 * @return todoList
 	 */
-	List<Todo> todoListFullView();
+	List<play> todoListFullView();
 
 	/** 전달 받은 index번째 todo를 반환 DAO
 	 * @param index
