@@ -12,11 +12,11 @@ public class Todo implements Serializable{
 	private String title; // 할 일 제목
 	private String detail; // 상세 내용
 	private boolean complete; // 완료 여부
-	private LocalDateTime regDate; // 등록 날짜
-	
-	// java.time 패키지
+	private LocalDateTime regDate; // 등록 날짜 java.time 패키지
 	// LocalDateTime : 날짜, 시간을 나타내는 클래스
 	// LocalDateTime.now() : 현재 시간 반환
+	
+	//
 	
 	// 기본생성자
 	public Todo() {}
